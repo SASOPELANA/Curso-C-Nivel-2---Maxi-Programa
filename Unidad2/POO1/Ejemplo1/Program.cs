@@ -45,7 +45,7 @@ namespace Ejemplo1
             Perro perro1 = new Perro();
             perro1.Nombre = "Chad";
             string dog = perro1.Nombre;
-            Console.WriteLine("El monbre del perro es: " +  dog);
+            Console.WriteLine("El nombre del perro es: " +  dog);
 
             perro1.Color = "Marron y Negro.";
             string clasico1 = perro1.Color;
