@@ -9,9 +9,16 @@ namespace Ejemplo1
     internal class Persona
     {
         // Persona: Edad, Sueldo, Nombre
+        // Atributos o mienbros
         private int edad;
         private float sueldo;
         private string nombre;
+
+        // Constructor Persona para nombre
+        public Persona (string nombre)
+        {
+            this.nombre = nombre;
+        }
 
         // METODO EDAD
         public void setEdad(int e)
@@ -24,26 +31,11 @@ namespace Ejemplo1
             return edad;
         }
 
-        // METODO SUELDO
-        public void setSueldo(float s)
+        // Metodos --> Comportamiento del objecto de persona
+        public string saludar() // el metodo debe ser public. Funcion especial 
         {
-            sueldo = s;
+            return "Hola soy ..." + nombre;
         }
 
-        public float getSueldo()
-        {
-            return sueldo;
-        }
-
-        // METODO NOMBRE
-        public void setNombre(string n)
-        {
-            nombre = n;
-        }
-
-        public string getNombre()
-        {
-            return nombre;
-        }
     }
 }

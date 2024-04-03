@@ -13,33 +13,35 @@ namespace Ejemplo1
             // Persona: Edad, Sueldo, Nombre
             // Atributos o Miembros
 
-            Persona p1 = new Persona(); //crea una clase persona
+            /**
+            Persona p1 = new Persona("Ricardo o Pepe"); //crea una clase persona
             p1.setEdad(30);
+            Console.WriteLine(p1.saludar());
             Console.WriteLine("La edad de la persona es: " + p1.getEdad()); // llama a la funcion y ala clase persona p1
-
-            p1.setSueldo(520000);
-            Console.WriteLine("El sueldo de la persona es: $" + p1.getSueldo());
-
-            p1.setNombre("Sergio Alejandro Sopelana");
-            Console.WriteLine("El monbre de la persona es: " + p1.getNombre());
-
+          
             Console.WriteLine(" ");
+            */
 
             // Botellla
             // Atributos 
-            Botella b1 = new Botella();
-            b1.Capacidad = 500;   // con get y set en la funcion o metodo permite asginar el valor como variable
-            int algo = b1.Capacidad; // Se puede asignar a una variable para leer
-            Console.WriteLine("La botella tiene la capacidad de: " + algo);
+            Botella b1 = new Botella("Rojo", "Plastico");
+            // b1.Capacidad = 500;   // con get y set en la funcion o metodo permite asginar el valor como variable
+            // int algo = b1.Capacidad; // Se puede asignar a una variable para leer
 
-            b1.setColor("Blue.");
-            Console.WriteLine("El color de la Botella es: " + b1.getColor());
+            // Botella b2 = new Botella(); // Se invoco al desctrutor vacio, sin parametros.
 
-            b1.setMaterial("Vidrio.");
-            Console.WriteLine("El material de la botella es: " + b1.getMaterial());
+            Console.WriteLine("Capacidad Botella " + b1.Capacidad);
+            Console.WriteLine("La cantidad actual es: " + b1.Capacidad_actual);
+
+            b1.recargar();
+            Console.WriteLine("Luego de recarga, la cantidad actual es: " + b1.Capacidad_actual);
+            // Console.WriteLine("La botella tiene la capacidad de: " + algo);
+
+
 
             Console.WriteLine(" ");
 
+            /**
             // Perro 
             // Atributos 
             Perro perro1 = new Perro();
@@ -54,6 +56,7 @@ namespace Ejemplo1
             perro1.Origen = "Pastor Aleman.";
             string pastor = perro1.Origen;
             Console.WriteLine("El origen del perro es: " + pastor);
+            */
 
             Console.ReadKey();
         }
