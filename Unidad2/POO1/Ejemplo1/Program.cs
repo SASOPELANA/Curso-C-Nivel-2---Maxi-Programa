@@ -14,20 +14,35 @@ namespace Ejemplo1
             // Atributos o Miembros
 
             // Crear el objecto persona en C#
-            Persona p1 = new Persona();
+            Persona p1 = new Persona("Sergio ");
             p1.setEdad(35);
 
+            // Aqui aplicamos sobrecarga de método saludar.
+            Console.WriteLine(p1.saludar());
+            Console.WriteLine(p1.saludar("Daniel"));
             Console.WriteLine("La edad de la persona es: " + p1.getEdad());
+
+
             Console.WriteLine("\n=================================================================\n");
 
             // Botella
-            Botella b1 = new Botella();
-            b1.Capacidad = 400;
-            int capa = b1.Capacidad;
+            Botella b1 = new Botella("Azul", "Plástico");
+            // b1.Capacidad = 400;
+            // int capa = b1.Capacidad;
 
-            Console.WriteLine("La capacidad de la Botella es: " +  capa);
+            // Botella b2 = new Botella();
 
-          
+
+            Console.WriteLine("La capacidad de la Botella es: " + b1.Capacidad);
+            Console.WriteLine("La cantidad actual: " + b1.CantidadActual);
+
+            b1.recargar(50);
+            Console.WriteLine("Luego de recargar, la cantidad actual: " + b1.CantidadActual);
+
+            b1.recargar();
+            Console.WriteLine("Luego de recargar, la cantidad actual: " + b1.CantidadActual);
+
+
             Console.WriteLine("\n=================================================================\n");
 
             // Clase Perro
