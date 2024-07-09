@@ -14,8 +14,8 @@ namespace Ejemplo1
         private string color;
         private string origen;
 
-        // Propiedad nombre
-        // Funcion Propiedad de C#
+        // Propiedad en C#. Esto es del lenguaje. Se usa para hacerder a los atributos privados.
+        // Uso de propiedad en C#      
         public string Nombre
         {
             get { return nombre; }

@@ -13,50 +13,35 @@ namespace Ejemplo1
             // Persona: Edad, Sueldo, Nombre
             // Atributos o Miembros
 
-            /**
-            Persona p1 = new Persona("Ricardo o Pepe"); //crea una clase persona
-            p1.setEdad(30);
-            Console.WriteLine(p1.saludar());
-            Console.WriteLine("La edad de la persona es: " + p1.getEdad()); // llama a la funcion y ala clase persona p1
+            // Crear el objecto persona en C#
+            Persona p1 = new Persona();
+            p1.setEdad(35);
+
+            Console.WriteLine("La edad de la persona es: " + p1.getEdad());
+            Console.WriteLine("\n=================================================================\n");
+
+            // Botella
+            Botella b1 = new Botella();
+            b1.Capacidad = 400;
+            int capa = b1.Capacidad;
+
+            Console.WriteLine("La capacidad de la Botella es: " +  capa);
+
           
-            Console.WriteLine(" ");
-            */
+            Console.WriteLine("\n=================================================================\n");
 
-            // Botellla
-            // Atributos 
-            Botella b1 = new Botella("Rojo", "Plastico");
-            // b1.Capacidad = 500;   // con get y set en la funcion o metodo permite asginar el valor como variable
-            // int algo = b1.Capacidad; // Se puede asignar a una variable para leer
+            // Clase Perro
+            Perro perro = new Perro();
+            perro.Nombre = "Firulai";
+            perro.Color = "marrón con negro";
+            perro.Origen = "Aleman.";
 
-            // Botella b2 = new Botella(); // Se invoco al desctrutor vacio, sin parametros.
+            // Crear y asignar valores a un vector en C#
+            string[] pastor = {perro.Nombre, perro.Color, perro.Origen };
 
-            Console.WriteLine("Capacidad Botella " + b1.Capacidad);
-            Console.WriteLine("La cantidad actual es: " + b1.Capacidad_actual);
-
-            b1.recargar();
-            Console.WriteLine("Luego de recarga, la cantidad actual es: " + b1.Capacidad_actual);
-            // Console.WriteLine("La botella tiene la capacidad de: " + algo);
+            Console.WriteLine("Nombre del perro " + pastor[0] + ", es de color " + pastor[1] + " y su origen " + pastor[2]);
 
 
-
-            Console.WriteLine(" ");
-
-            /**
-            // Perro 
-            // Atributos 
-            Perro perro1 = new Perro();
-            perro1.Nombre = "Chad";
-            string dog = perro1.Nombre;
-            Console.WriteLine("El nombre del perro es: " +  dog);
-
-            perro1.Color = "Marron y Negro.";
-            string clasico1 = perro1.Color;
-            Console.WriteLine("El color del perro es: " +  clasico1);
-
-            perro1.Origen = "Pastor Aleman.";
-            string pastor = perro1.Origen;
-            Console.WriteLine("El origen del perro es: " + pastor);
-            */
 
             Console.ReadKey();
         }

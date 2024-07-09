@@ -8,34 +8,24 @@ namespace Ejemplo1
 {
     internal class Persona
     {
-        // Persona: Edad, Sueldo, Nombre
         // Atributos o mienbros
+        // Persona: Edad, Sueldo, Nombre
         private int edad;
         private float sueldo;
         private string nombre;
 
-        // Constructor Persona para nombre
-        public Persona (string nombre)
-        {
-            this.nombre = nombre;
-        }
-
-        // METODO EDAD
+        // Metodo edad
         public void setEdad(int e)
         {
             edad = e;
         }
 
+        // Get obtener
         public int getEdad() 
         {
             return edad;
         }
-
-        // Metodos --> Comportamiento del objecto de persona
-        public string saludar() // el metodo debe ser public. Funcion especial 
-        {
-            return "Hola soy ..." + nombre;
-        }
-
+            
+         
     }
 }

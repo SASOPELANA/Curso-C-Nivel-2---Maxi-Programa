@@ -12,10 +12,10 @@ namespace Ejemplo2
         //   _ Cantidad
         //   _ Código cliente (1 a 100)
 
-        public int Codigo_Articulo { get; set; }
-
+        // Creamos metodo propiedad reducido en C#
+        public int CodigoArticulo {  get; set; }
         public int Cantidad { get; set; }
-
-        public int Codigo_Cliente { get; set; }
+        public int CodigoCliente { get; set; }
+        
     }
 }

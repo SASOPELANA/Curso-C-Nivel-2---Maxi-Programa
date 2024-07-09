@@ -11,27 +11,28 @@ namespace Ejemplo2
         //  _ Codigo de Articulo(3 digitos no correlativos)
         //  _ Precio
         //  _ Código marca (1 a 10)
+        // private int codigArticulo;
+        
+        // Forma reducida de armar la Propiedad en C#.
+        public int CodigoArticulo { get; set; } // --> Metodo propiedad en C# reducido. Pero no de puede manipular el ger y el set con este metodo.
 
-        // private int codigo_articulo;
-        public int Codigo_Articulo { get; set; }
-
-        // private float precio;
+        // private floar precio
         public float Precio { get; set; }
 
-        private int codigo_marca;
+        private int codiMarca;
 
+        // En metodo propiedad sin resumir, puedo manipular el get y set.
         public int CodigoMarca
         {
-            get { return codigo_marca; }
+            get { return codiMarca; }
             set
             {
                 if (value > 0 && value < 11)
-                    codigo_marca = value;
+                    codiMarca = value;
                 else
-                    codigo_marca = -1;
+                    codiMarca = -1;
             }
         }
-
 
     }
 }
