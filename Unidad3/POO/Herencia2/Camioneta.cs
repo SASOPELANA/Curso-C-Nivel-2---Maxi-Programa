@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Herencia2
 {
-    internal class Camioneta
+    internal class Camioneta : Vehiculo
     {
+        public float cargaMaxima {  get; set; }
+
+
     }
 }
