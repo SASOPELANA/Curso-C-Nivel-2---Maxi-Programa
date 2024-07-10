@@ -14,6 +14,7 @@ namespace Herencia2
             // >Camioneta
             // >Moto
 
+            /*
             Vehiculo v1 = new Vehiculo();
             Camioneta c1 = new Camioneta();
             Camioneta c2 = new Camioneta();
@@ -31,6 +32,7 @@ namespace Herencia2
             listaCamioneta.Add(c1); // Es como un vector. Usamos la funcion -->    Add()
             listaCamioneta.Add(c2);
             listaCamioneta.Add(c3);
+            */
 
             /*
             // Forma de mostrar la lista. Usamos Count para contar la cantidad que almacena cierta lista.
@@ -47,11 +49,17 @@ namespace Herencia2
             */
 
             // Recorrer una lista de camioneta. forech --> Para iterar un coleccion 
-
+            /*
             foreach (Camioneta item in listaCamioneta)
             {
                 Console.WriteLine(item.Color);
             }
+            */
+
+            // Asociacion por agragación.
+            Auto a1 = new Auto(); // Creamos el objecto a1
+            // Le agregamos el motor al mismo a1
+            a1.Motor = new Motor(); // Aplicamos agregacion, del motor.
 
 
 

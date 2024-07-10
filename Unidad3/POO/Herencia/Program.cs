@@ -14,6 +14,8 @@ namespace Herencia
             Persona p1 = new Persona();
            
             Developer dev = new Developer();
+
+            // Console.WriteLine(); --> Console es una clase statica. No nesecita ser creada. No abusar de esto por que se ejecuta en memoria.
             
         }
     }
