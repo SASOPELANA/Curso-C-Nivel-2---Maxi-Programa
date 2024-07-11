@@ -41,7 +41,5 @@ namespace Ejemplo1
            // MessageBox.Show("Hasta Luego...");
         }
 
-       
-
     }
 }
