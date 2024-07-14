@@ -24,7 +24,7 @@ namespace Ejemplo1
             foreach (var item in Application.OpenForms)
             {
                 if (item.GetType() == typeof(Form1))
-                    // ENTANA ABIERTA
+                    // VENTANA ABIERTA
                     return;
             }
 
