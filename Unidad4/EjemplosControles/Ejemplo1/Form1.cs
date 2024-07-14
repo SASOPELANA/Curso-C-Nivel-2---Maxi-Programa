@@ -57,6 +57,12 @@ namespace Ejemplo1
             string mensaje = chocolate + "\nEs " + tipo + ".\nSu color favorito es " + colorFavorito+ "." + "\nSu número favorito " + numeroFavorito+ ".";
             MessageBox.Show("Nombre: " + nombre + ".\nFecha de nacimiento: " + fecha + "\n" + mensaje);
 
+            // Configure message box
+            string message = "Hasta luego";
+            string caption = "Bye....";
+            // Show message box
+            MessageBox.Show(message, caption);
+
         }
     }
 }
